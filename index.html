@@ -4,10 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
- 
+    <div class="header">
+        <h1>Take Notes</h1>
+    </div>
+    <div class="body">
+        <div class="left">
+            <h1>Tasks</h1>
+            <div class="taskListDiv">
+
+            </div>
+        </div>
+        <div class="right">
+            <form id="TaskForm">
+                <label>Title :</label>
+                <input type="text" id="title" placeholder="Enter task title">
+                <label>Notes :</label>
+                <textarea type="text" id="notes" rows="5" cols="3" placeholder="Enter the notes"></textarea>
+                <button type="submit" class="newNotes">New note</button>
+            </form>
+        </div>
+    </div>
+
     <script src="./app.js"></script>
 </body>
 </html>

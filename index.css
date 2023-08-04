@@ -1,0 +1,89 @@
+.header{
+    background-color: rgb(207, 199, 188);
+    display:flex;
+    justify-content: space-around;
+}
+h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.body{
+    display: flex;
+}
+.left{
+    padding:20px;
+    width:fit-content;
+    background-color:antiquewhite ;
+}
+.right{
+    align-items: center;
+    
+}
+label{
+    font-size: 26px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#title,#notes{
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#TaskForm{
+    padding:6rem;
+    display:flex;
+    gap:1rem;
+    flex-direction: column;
+}
+
+.dispNotes{
+    display: none;
+}
+.newNotes{
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.delete{
+    cursor: pointer;
+    padding: 0 1rem;
+    margin:1rem;
+}
+.Edit{
+    cursor: pointer;
+    padding: 0 1rem;
+    margin:1rem;
+}
+.taskListDiv{
+    height: 71vh;
+    width: 300px;
+    overflow:scroll;
+}
+
+.taskListDiv::-webkit-scrollbar{
+    display: none;
+}
+
+@media screen and (max-width:735px) {
+    .body{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .left{
+        display:flex ;
+        justify-content: center;
+        width: auto;
+    }
+    label{
+        font-size: 20px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    #title,#notes{
+        padding: 8px;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+    #TaskForm{
+        width: 200px;
+    }
+}
